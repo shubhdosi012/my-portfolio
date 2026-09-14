@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shubh Dosi - Hello World!</title>
+    <meta name="description" content="B.Tech CSE (AI & ML) student at JECRC University. Aspiring Tech Leader, Software Engineer & AI/ML Enthusiast — building, exploring, and pushing boundaries.">
+    <meta name="keywords" content="Shubh Dosi, Portfolio, B.Tech CSE, AI, ML, JECRC University, Software Engineer, Developer, SIH">
+    <meta name="author" content="Shubh Dosi">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Shubh Dosi - Hello World!">
+    <meta property="og:description" content="B.Tech CSE (AI & ML) student at JECRC University. Aspiring Tech Leader & AI/ML Enthusiast.">
+    <meta property="og:type" content="website">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Custom Cursor -->
+    <div class="cursor-dot" id="cursorDot"></div>
+    <div class="cursor-ring" id="cursorRing"></div>
+
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+        <a href="#" class="nav-brand">Shubh Dosi</a>
+
+        <div class="nav-links" id="navLinks">
+            <a href="#home" class="nav-link active">Home</a>
+            <a href="#about" class="nav-link">About</a>
+            <a href="#projects" class="nav-link">Projects</a>
+            <a href="#progress" class="nav-link">Progress</a>
+            <a href="#blog" class="nav-link">Blog</a>
+            <a href="#contact" class="nav-link">Contact</a>
+        </div>
+
+        <div class="nav-actions">
+            <div class="nav-socials">
+                <a href="https://github.com/shubhdosi012" target="_blank" rel="noopener" aria-label="GitHub">
+                    <i data-lucide="github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/shubh-dosi-575323311/" target="_blank" rel="noopener" aria-label="LinkedIn">
+                    <i data-lucide="linkedin"></i>
+                </a>
+                <a href="https://leetcode.com/u/shubhdosi012/" target="_blank" rel="noopener" aria-label="LeetCode">
+                    <i data-lucide="code-2"></i>
+                </a>
+            </div>
+            <a href="#contact" class="nav-cta">Contact Me</a>
+            <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="mobile-menu-content">
+            <a href="#home" class="mobile-link">Home</a>
+            <a href="#about" class="mobile-link">About</a>
+            <a href="#projects" class="mobile-link">Projects</a>
+            <a href="#progress" class="mobile-link">Progress</a>
+            <a href="#blog" class="mobile-link">Blog</a>
+            <a href="#contact" class="mobile-link">Contact</a>
+            <div class="mobile-socials">
+                <a href="https://github.com/shubhdosi012" target="_blank" rel="noopener"><i data-lucide="github"></i></a>
+                <a href="https://www.linkedin.com/in/shubh-dosi-575323311/" target="_blank" rel="noopener"><i data-lucide="linkedin"></i></a>
+                <a href="https://leetcode.com/u/shubhdosi012/" target="_blank" rel="noopener"><i data-lucide="code-2"></i></a>
+                <a href="mailto:shubhdosi012@gmail.com"><i data-lucide="mail"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <canvas id="particleCanvas"></canvas>
+        <div class="hero-content">
+            <div class="hero-badge">
+                <span class="badge-dot"></span>
+                <span>Available for opportunities</span>
+            </div>
+
+            <!-- Profile Picture -->
+            <div class="hero-avatar">
+                <img src="profile.jpg" alt="Shubh Dosi" width="150" height="150">
+                <div class="avatar-ring"></div>
+            </div>
+
+            <h1 class="hero-title">
+                <span class="hero-greeting">Hello World! I'm</span>
+                <span class="hero-name">Shubh Dosi</span>
+            </h1>
+            <h2 class="hero-typed">
+                I'm passionate about <span class="typed-text" id="typedText"></span><span class="typed-cursor">|</span>
+            </h2>
+            <p class="hero-description">
+                B.Tech CSE (AI & ML) @ JECRC University • SIH Participant • Aspiring Tech Leader & Freelancer
+            </p>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn btn-primary">
+                    <i data-lucide="folder-open"></i>
+                    View Projects
+                </a>
+                <a href="#contact" class="btn btn-outline">
+                    <i data-lucide="send"></i>
+                    Get in Touch
+                </a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <span class="stat-number" data-count="35">0</span>+
+                    <span class="stat-label">Python Programs</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <span class="stat-number" data-count="3">0</span>
+                    <span class="stat-label">Projects Built</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <span class="stat-number" data-count="3">0</span>
+                    <span class="stat-label">Certifications</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <span class="stat-number" data-count="16">0</span>+
+                    <span class="stat-label">GitHub Commits</span>
+                </div>
+            </div>
+        </div>
+        <a href="#about" class="scroll-indicator" aria-label="Scroll to next section">
+            <i data-lucide="chevrons-down"></i>
+        </a>
+    </section>
+
+    <!-- About Section -->
+    <section class="section about" id="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">About Me</span>
+                <h2 class="section-title">Who I Am</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="about-grid">
+                <div class="about-text reveal-left">
+                    <p>I'm <strong>Shubh Dosi</strong>, a <strong>B.Tech CSE (AI & ML)</strong> student at <strong>JECRC University</strong>, driven by a deep curiosity for technology and innovation.</p>
+                    <p>My mission is to become a <strong>recognized tech leader</strong> — building impactful products, freelancing, and eventually launching my own startup. I believe in the power of consistent learning and execution.</p>
+                    <p>As a <strong>SIH Participant & Team Lead</strong>, I've experienced the thrill of building innovative solutions under pressure. I'm constantly experimenting with AI/ML, full-stack development, and Python scripting to turn ideas into reality.</p>
+                    <p class="hero-quote">"Learn → Build → Upload → Share → Repeat"</p>
+                    <div class="about-actions">
+                        <a href="https://github.com/shubhdosi012" target="_blank" class="btn btn-primary">
+                            <i data-lucide="github"></i>
+                            GitHub Profile
+                        </a>
+                        <a href="https://leetcode.com/u/shubhdosi012/" target="_blank" class="btn btn-outline">
+                            <i data-lucide="code-2"></i>
+                            LeetCode
+                        </a>
+                    </div>
+                </div>
+                <div class="about-skills reveal-right">
+                    <h3>Skills & Technologies</h3>
+                    <div class="skills-grid">
+                        <div class="skill-tag" data-level="learning">Python</div>
+                        <div class="skill-tag" data-level="learning">C Programming</div>
+                        <div class="skill-tag" data-level="learning">HTML / CSS</div>
+                        <div class="skill-tag" data-level="learning">JavaScript</div>
+                        <div class="skill-tag" data-level="beginner">Machine Learning</div>
+                        <div class="skill-tag" data-level="beginner">Deep Learning</div>
+                        <div class="skill-tag" data-level="learning">OOP</div>
+                        <div class="skill-tag" data-level="learning">Data Structures</div>
+                        <div class="skill-tag" data-level="learning">SQL</div>
+                        <div class="skill-tag" data-level="learning">Git & GitHub</div>
+                        <div class="skill-tag" data-level="beginner">React</div>
+                        <div class="skill-tag" data-level="beginner">Node.js</div>
+                    </div>
+
+                    <h3 style="margin-top: 32px;">Achievements</h3>
+                    <div class="achievements-list">
+                        <div class="achievement-item">
+                            <i data-lucide="award"></i>
+                            <span>IBM Data Science Badge</span>
+                        </div>
+                        <div class="achievement-item">
+                            <i data-lucide="trophy"></i>
+                            <span>SIH Participant & Team Lead</span>
+                        </div>
+                        <div class="achievement-item">
+                            <i data-lucide="users"></i>
+                            <span>163+ LinkedIn Connections</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section projects" id="projects">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Portfolio</span>
+                <h2 class="section-title">My Projects</h2>
+                <div class="section-line"></div>
+            </div>
+
+            <div class="project-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="ai">AI / ML</button>
+                <button class="filter-btn" data-filter="web">Web Dev</button>
+                <button class="filter-btn" data-filter="python">Python</button>
+            </div>
+
+            <div class="projects-grid">
+                <!-- Project 1: SIH Dashboard -->
+                <div class="project-card reveal-up" data-category="web">
+                    <div class="project-image">
+                        <img src="sih-dashboard.jpg" alt="SIH Worker Dashboard" class="project-img" loading="lazy">
+                        <div class="project-overlay">
+                            <a href="https://github.com/shubhdosi012" target="_blank" class="project-link" aria-label="View code">
+                                <i data-lucide="github"></i>
+                            </a>
+                        </div>
+                        <span class="project-status completed">Completed</span>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-tags">
+                            <span class="tag">SIH</span>
+                            <span class="tag">Dashboard</span>
+                            <span class="tag">Web Dev</span>
+                        </div>
+                        <h3>SIH Worker Dashboard</h3>
+                        <p>A comprehensive worker dashboard built for Smart India Hackathon — featuring real-time UI, task management, and team collaboration tools.</p>
+                    </div>
+                </div>
+
+                <!-- Project 2: Attendance Manager -->
+                <div class="project-card reveal-up" data-category="python">
+                    <div class="project-image">
+                        <img src="attendance-manager.jpg" alt="Attendance Manager" class="project-img" loading="lazy">
+                        <div class="project-overlay">
+                            <a href="https://github.com/shubhdosi012" target="_blank" class="project-link" aria-label="View code">
+                                <i data-lucide="github"></i>
+                            </a>
+                        </div>
+                        <span class="project-status completed">Completed</span>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">Automation</span>
+                        </div>
+                        <h3>Attendance Manager</h3>
+                        <p>An automated attendance tracking system built with Python — handles student records, generates reports, and tracks attendance percentages.</p>
+                    </div>
+                </div>
+
+                <!-- Project 3: Student Result Calculator -->
+                <div class="project-card reveal-up" data-category="python">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i data-lucide="graduation-cap"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <a href="https://github.com/shubhdosi012" target="_blank" class="project-link" aria-label="View code">
+                                <i data-lucide="github"></i>
+                            </a>
+                        </div>
+                        <span class="project-status completed">Completed</span>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">OOP</span>
+                        </div>
+                        <h3>Student Result System</h3>
+                        <p>A full-featured student result management system using OOP principles — calculates grades, generates result cards, and manages student data.</p>
+                    </div>
+                </div>
+
+                <!-- Project 4: Portfolio Website -->
+                <div class="project-card reveal-up" data-category="web">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i data-lucide="globe"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <a href="https://github.com/shubhdosi012" target="_blank" class="project-link" aria-label="View code">
+                                <i data-lucide="github"></i>
+                            </a>
+                        </div>
+                        <span class="project-status wip">In Progress</span>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-tags">
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+                            <span class="tag">JavaScript</span>
+                        </div>
+                        <h3>Portfolio Website</h3>
+                        <p>This premium portfolio featuring particle animations, smooth transitions, typed text effects, and a fully responsive modern dark design.</p>
+                    </div>
+                </div>
+
+                <!-- Project 5: AI Study Assistant (Upcoming) -->
+                <div class="project-card reveal-up" data-category="ai">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i data-lucide="brain"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <a href="https://github.com/shubhdosi012" target="_blank" class="project-link" aria-label="View code">
+                                <i data-lucide="github"></i>
+                            </a>
+                        </div>
+                        <span class="project-status upcoming">Upcoming</span>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-tags">
+                            <span class="tag">AI</span>
+                            <span class="tag">Python</span>
+                            <span class="tag">ML</span>
+                        </div>
+                        <h3>AI Study Assistant</h3>
+                        <p>An intelligent study companion powered by AI — will help students with smart notes, quiz generation, and personalized learning paths.</p>
+                    </div>
+                </div>
+
+                <!-- Project 6: Bank Account System -->
+                <div class="project-card reveal-up" data-category="python">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i data-lucide="wallet"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <a href="https://github.com/shubhdosi012" target="_blank" class="project-link" aria-label="View code">
+                                <i data-lucide="github"></i>
+                            </a>
+                        </div>
+                        <span class="project-status completed">Completed</span>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">OOP</span>
+                            <span class="tag">Classes</span>
+                        </div>
+                        <h3>Bank Account System</h3>
+                        <p>A Python OOP-based banking system with deposit, withdrawal, balance checking, and transaction history features.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="projects-cta">
+                <a href="https://github.com/shubhdosi012" target="_blank" class="btn btn-outline">
+                    See All on GitHub →
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Progress / Scoreboard Section -->
+    <section class="section progress-section" id="progress">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">🚀 Dashboard</span>
+                <h2 class="section-title">My Progress</h2>
+                <div class="section-line"></div>
+            </div>
+
+            <div class="progress-grid">
+                <!-- Python Progress -->
+                <div class="progress-card reveal-up">
+                    <div class="progress-card-header">
+                        <div class="progress-icon python-icon">
+                            <i data-lucide="terminal"></i>
+                        </div>
+                        <h3>Python</h3>
+                    </div>
+                    <div class="progress-bar-container">
+                        <div class="progress-bar" data-percent="35" style="--bar-color: var(--accent-primary);">
+                            <div class="progress-bar-fill"></div>
+                        </div>
+                        <span class="progress-label">35 / 100 Programs</span>
+                    </div>
+                    <div class="progress-topics">
+                        <span class="topic-done">Variables</span>
+                        <span class="topic-done">I/O</span>
+                        <span class="topic-done">If-Else</span>
+                        <span class="topic-done">Loops</span>
+                        <span class="topic-done">Functions</span>
+                        <span class="topic-done">Lists</span>
+                        <span class="topic-done">Dicts</span>
+                        <span class="topic-done">OOP</span>
+                        <span class="topic-pending">File I/O</span>
+                        <span class="topic-pending">NumPy</span>
+                    </div>
+                </div>
+
+                <!-- C Programming -->
+                <div class="progress-card reveal-up">
+                    <div class="progress-card-header">
+                        <div class="progress-icon c-icon">
+                            <i data-lucide="code"></i>
+                        </div>
+                        <h3>C Programming</h3>
+                    </div>
+                    <div class="progress-bar-container">
+                        <div class="progress-bar" data-percent="10" style="--bar-color: #818cf8;">
+                            <div class="progress-bar-fill"></div>
+                        </div>
+                        <span class="progress-label">5 / 50 Programs</span>
+                    </div>
+                    <div class="progress-topics">
+                        <span class="topic-done">Sum</span>
+                        <span class="topic-done">Average</span>
+                        <span class="topic-done">Area</span>
+                        <span class="topic-done">Interest</span>
+                        <span class="topic-done">Swap</span>
+                        <span class="topic-pending">More...</span>
+                    </div>
+                </div>
+
+                <!-- LeetCode -->
+                <div class="progress-card reveal-up">
+                    <div class="progress-card-header">
+                        <div class="progress-icon lc-icon">
+                            <i data-lucide="swords"></i>
+                        </div>
+                        <h3>LeetCode</h3>
+                    </div>
+                    <div class="progress-bar-container">
+                        <div class="progress-bar" data-percent="3" style="--bar-color: #fbbf24;">
+                            <div class="progress-bar-fill"></div>
+                        </div>
+                        <span class="progress-label">3 / 100 Problems</span>
+                    </div>
+                    <a href="https://leetcode.com/u/shubhdosi012/" target="_blank" class="progress-link">
+                        View Profile <i data-lucide="arrow-up-right"></i>
+                    </a>
+                </div>
+
+                <!-- GitHub -->
+                <div class="progress-card reveal-up">
+                    <div class="progress-card-header">
+                        <div class="progress-icon gh-icon">
+                            <i data-lucide="github"></i>
+                        </div>
+                        <h3>GitHub</h3>
+                    </div>
+                    <div class="progress-bar-container">
+                        <div class="progress-bar" data-percent="8" style="--bar-color: #34d399;">
+                            <div class="progress-bar-fill"></div>
+                        </div>
+                        <span class="progress-label">16+ / 200 Commits</span>
+                    </div>
+                    <div class="progress-mini-stats">
+                        <div class="mini-stat">
+                            <strong>2</strong>
+                            <span>Repos</span>
+                        </div>
+                        <div class="mini-stat">
+                            <strong>16+</strong>
+                            <span>Commits</span>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section class="section blog" id="blog">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Blog</span>
+                <h2 class="section-title">Recent Posts ✱</h2>
+                <div class="section-line"></div>
+            </div>
+
+            <div class="blog-grid">
+                <article class="blog-card reveal-up">
+                    <div class="blog-image">
+                        <div class="blog-placeholder">
+                            <i data-lucide="trophy"></i>
+                        </div>
+                        <span class="blog-category">Hackathon</span>
+                    </div>
+                    <div class="blog-content">
+                        <time class="blog-date">September 2026</time>
+                        <h3>My SIH Journey: Leading a Team Under Pressure</h3>
+                        <p>From ideation to building the Worker Dashboard — lessons in teamwork, rapid prototyping, and leading from the front at Smart India Hackathon.</p>
+                        <a href="#" class="blog-read-more">Read More <i data-lucide="arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <article class="blog-card reveal-up">
+                    <div class="blog-image">
+                        <div class="blog-placeholder">
+                            <i data-lucide="cpu"></i>
+                        </div>
+                        <span class="blog-category">Learning</span>
+                    </div>
+                    <div class="blog-content">
+                        <time class="blog-date">September 2026</time>
+                        <h3>Python Day 5: From Loops to OOP in One Sprint</h3>
+                        <p>How I completed 35 Python programs, mastered functions, lists, dictionaries, and OOP basics — all during a focused 2-day holiday sprint.</p>
+                        <a href="#" class="blog-read-more">Read More <i data-lucide="arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <article class="blog-card reveal-up">
+                    <div class="blog-image">
+                        <div class="blog-placeholder">
+                            <i data-lucide="rocket"></i>
+                        </div>
+                        <span class="blog-category">Goals</span>
+                    </div>
+                    <div class="blog-content">
+                        <time class="blog-date">September 2026</time>
+                        <h3>My 2026-27 Tech Leader Roadmap</h3>
+                        <p>Setting ambitious goals — 100 Python programs, 10 repos, first freelance client, and building towards my own startup. Here's the plan.</p>
+                        <a href="#" class="blog-read-more">Read More <i data-lucide="arrow-right"></i></a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact / Footer Section -->
+    <section class="section contact" id="contact">
+        <div class="container">
+            <div class="contact-wrapper">
+                <div class="contact-left reveal-left">
+                    <span class="section-tag">Contact</span>
+                    <h2 class="contact-title">Hello World</h2>
+                    <p class="contact-description">Got a project in mind, want to collaborate, or looking for a freelancer? I'd love to hear from you. Let's create something amazing together.</p>
+                    <a href="mailto:shubhdosi012@gmail.com" class="btn btn-primary btn-large">
+                        <i data-lucide="mail"></i>
+                        Get in Touch
+                    </a>
+                </div>
+                <div class="contact-right reveal-right">
+                    <div class="contact-links">
+                        <a href="https://github.com/shubhdosi012" target="_blank" class="contact-link-item">
+                            <i data-lucide="github"></i>
+                            <span>GitHub</span>
+                            <i data-lucide="arrow-up-right"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/shubh-dosi-575323311/" target="_blank" class="contact-link-item">
+                            <i data-lucide="linkedin"></i>
+                            <span>LinkedIn</span>
+                            <i data-lucide="arrow-up-right"></i>
+                        </a>
+                        <a href="https://leetcode.com/u/shubhdosi012/" target="_blank" class="contact-link-item">
+                            <i data-lucide="code-2"></i>
+                            <span>LeetCode</span>
+                            <i data-lucide="arrow-up-right"></i>
+                        </a>
+                        <a href="mailto:shubhdosi012@gmail.com" class="contact-link-item">
+                            <i data-lucide="mail"></i>
+                            <span>shubhdosi012@gmail.com</span>
+                            <i data-lucide="arrow-up-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p class="footer-brand">Shubh Dosi</p>
+                <p class="footer-copy">© 2026. All rights reserved. Made with ❤️ by Shubh Dosi</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
