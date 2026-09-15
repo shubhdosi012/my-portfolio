@@ -1005,6 +1005,133 @@ img {
     line-height: 1.6;
 }
 
+.project-actions {
+    margin-top: 16px;
+    padding-top: 16px;
+    border-top: 1px solid var(--border-color);
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.project-github-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-family: var(--font-primary);
+    font-size: 13px;
+    font-weight: 600;
+    padding: 10px 20px;
+    border-radius: var(--radius-sm);
+    background: var(--text-primary);
+    color: #ffffff;
+    transition: all var(--transition-smooth);
+    position: relative;
+    overflow: hidden;
+}
+
+.project-github-btn::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, #22c55e 0%, #3b82f6 50%, #6366f1 100%);
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+.project-github-btn i,
+.project-github-btn svg {
+    width: 16px;
+    height: 16px;
+    position: relative;
+    z-index: 1;
+}
+
+.project-github-btn span {
+    position: relative;
+    z-index: 1;
+}
+
+.project-github-btn i:last-child,
+.project-github-btn svg:last-child {
+    width: 14px;
+    height: 14px;
+    transition: transform var(--transition-fast);
+}
+
+.project-github-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 24px rgba(0, 0, 0, 0.2), 0 0 16px rgba(34, 197, 94, 0.15);
+}
+
+.project-github-btn:hover::before {
+    opacity: 1;
+}
+
+.project-github-btn:hover i:last-child,
+.project-github-btn:hover svg:last-child {
+    transform: translate(2px, -2px);
+}
+
+.project-linkedin-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-family: var(--font-primary);
+    font-size: 13px;
+    font-weight: 600;
+    padding: 10px 20px;
+    border-radius: var(--radius-sm);
+    background: #0A66C2;
+    color: #ffffff;
+    transition: all var(--transition-smooth);
+    position: relative;
+    overflow: hidden;
+}
+
+.project-linkedin-btn::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, #0A66C2 0%, #3b82f6 50%, #6366f1 100%);
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+.project-linkedin-btn i,
+.project-linkedin-btn svg {
+    width: 16px;
+    height: 16px;
+    position: relative;
+    z-index: 1;
+}
+
+.project-linkedin-btn span {
+    position: relative;
+    z-index: 1;
+}
+
+.project-linkedin-btn i:last-child,
+.project-linkedin-btn svg:last-child {
+    width: 14px;
+    height: 14px;
+    transition: transform var(--transition-fast);
+}
+
+.project-linkedin-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 24px rgba(10, 102, 194, 0.35), 0 0 16px rgba(59, 130, 246, 0.2);
+}
+
+.project-linkedin-btn:hover::before {
+    opacity: 1;
+}
+
+.project-linkedin-btn:hover i:last-child,
+.project-linkedin-btn:hover svg:last-child {
+    transform: translate(2px, -2px);
+}
+
 .projects-cta {
     text-align: center;
     margin-top: 48px;
@@ -1039,11 +1166,21 @@ img {
 
 .blog-image {
     position: relative;
-    height: 180px;
+    height: 200px;
     background: linear-gradient(135deg, var(--bg-secondary) 0%, var(--bg-card-hover) 100%);
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    overflow: hidden;
+}
+
+.blog-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.blog-card:hover .blog-img {
+    transform: scale(1.08);
 }
 
 .blog-placeholder {
